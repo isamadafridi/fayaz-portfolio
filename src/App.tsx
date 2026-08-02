@@ -42,9 +42,9 @@ function App() {
 
     // Anchor link handling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', (e) => {
         e.preventDefault();
-        const targetId = this.getAttribute('href');
+        const targetId = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
         if (targetId && targetId !== '#') {
           const targetElement = document.querySelector(targetId) as HTMLElement;
           if (targetElement) {
