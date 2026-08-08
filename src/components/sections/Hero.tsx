@@ -40,8 +40,8 @@ const Hero = () => {
               FAYAZ <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">AFRIDI</span>
             </h1>
             <h2 className="text-xl md:text-3xl text-gray-300 font-medium mb-6">
-              Graphic Designer, Content Creator & <br className="hidden md:block" />
-              LinkedIn Personal Branding Expert
+              Graphic Designer & Content Creator <br className="hidden md:block" />
+              {/* LinkedIn Personal Branding Expert */}
             </h2>
             <p className="text-gray-400 max-w-lg text-sm md:text-base mb-10 leading-relaxed">
               Helping founders, entrepreneurs, CEOs and professionals build powerful personal brands through strategic graphic design and LinkedIn optimization.
@@ -73,22 +73,29 @@ const Hero = () => {
               </div>
             </motion.div>
 
-            {/* Floating Icons */}
-            <motion.div
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute top-20 right-10 md:right-20 bg-card border border-primary p-4 rounded-2xl shadow-xl backdrop-blur-md"
-            >
-              <FaLinkedin className="text-primary w-8 h-8" />
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [10, -10, 10] }}
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-20 left-10 md:left-20 bg-card border border-primary p-4 rounded-2xl shadow-xl backdrop-blur-md"
-            >
-              <FaBehance className="text-white w-8 h-8" />
-            </motion.div>
+            {/* Floating Social Icons */}
+            {[
+              { icon: FaLinkedin, link: 'https://www.linkedin.com/in/fayaz-afridi-80ba02224', position: 'top-10 md:top-20 right-4 md:right-10', animation: { y: [-15, 15, -15], x: [0, 5, 0] }, duration: 4, delay: 0 },
+              { icon: FaBehance, link: 'https://www.behance.net/fayazafridi', position: 'bottom-10 md:bottom-20 left-4 md:left-10', animation: { y: [15, -15, 15], x: [0, -5, 0] }, duration: 5, delay: 1 },
+              { icon: FaWhatsapp, link: 'https://wa.me/923129979558', position: 'top-24 md:top-36 left-2 md:left-8', animation: { y: [-10, 10, -10], x: [0, -10, 0] }, duration: 4.5, delay: 0.5 },
+              { icon: FaInstagram, link: 'https://www.instagram.com/fayaz_afridii', position: 'bottom-24 md:bottom-36 right-2 md:right-8', animation: { y: [10, -10, 10], x: [0, 10, 0] }, duration: 5.5, delay: 1.5 },
+              { icon: FaFacebookF, link: 'https://www.facebook.com/fayaz_afridii', position: 'top-1/2 -mt-6 right-0 md:-right-4', animation: { y: [-12, 12, -12], x: [5, -5, 5] }, duration: 6, delay: 2 },
+            ].map((social, idx) => {
+              const Icon = social.icon;
+              return (
+                <motion.a
+                  key={idx}
+                  href={social.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  animate={social.animation}
+                  transition={{ repeat: Infinity, duration: social.duration, ease: "easeInOut", delay: social.delay }}
+                  className={`absolute ${social.position} bg-card border border-primary p-4 rounded-full shadow-xl backdrop-blur-md hover:bg-primary hover:text-white text-primary transition-all duration-300 z-20 hover:scale-110`}
+                >
+                  <Icon className="w-6 h-6" />
+                </motion.a>
+              )
+            })}
           </div>
         </div>
       </div>
@@ -106,32 +113,7 @@ const Hero = () => {
           <Mouse size={24} className="text-gray-400" />
         </motion.div>
       </motion.div>
-      {/* Vertical Social Links */}
-      <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4 z-50">
-        {[
-          { icon: FaLinkedin, link: 'https://www.linkedin.com/in/fayaz-afridi-80ba02224' },
-          { icon: FaBehance, link: 'https://www.behance.net/fayazafridi' },
-          { icon: FaWhatsapp, link: 'https://wa.me/923129979558' },
-          { icon: FaInstagram, link: 'https://www.instagram.com/fayaz_afridii' },
-          { icon: FaFacebookF, link: 'https://www.facebook.com/fayaz_afridii' },
-        ].map((social, i) => {
-          const Icon = social.icon;
-          return (
-            <motion.a
-              key={i}
-              href={social.link}
-              target="_blank"
-              rel="noreferrer"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.8 + (i * 0.1) }}
-              className="w-10 h-10 bg-card/80 border border-primary rounded-full flex items-center justify-center hover:bg-primary hover:-translate-x-1 transition-all duration-300 text-primary hover:text-white backdrop-blur-sm shadow-lg"
-            >
-              <Icon className="w-4 h-4" />
-            </motion.a>
-          );
-        })}
-      </div>
+
     </section>
   );
 };
