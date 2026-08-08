@@ -126,7 +126,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.8 + (i * 0.1) }}
-              className="w-10 h-10 bg-card/80 border border-border rounded-full flex items-center justify-center hover:bg-primary hover:-translate-x-1 transition-all duration-300 text-primary hover:text-white backdrop-blur-sm shadow-lg"
+              className="w-10 h-10 bg-card/80 border border-primary rounded-full flex items-center justify-center hover:bg-primary hover:-translate-x-1 transition-all duration-300 text-primary hover:text-white backdrop-blur-sm shadow-lg"
             >
               <Icon className="w-4 h-4" />
             </motion.a>

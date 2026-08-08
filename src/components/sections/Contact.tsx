@@ -117,7 +117,7 @@ const Contact = () => {
                       href={social.link}
                       target="_blank"
                       rel="noreferrer"
-                      className="w-12 h-12 bg-card border border-border rounded-full flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all duration-300 group"
+                      className="w-12 h-12 bg-card border border-primary rounded-full flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all duration-300 group"
                     >
                       <Icon className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
                     </a>
