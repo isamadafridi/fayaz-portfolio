@@ -71,7 +71,7 @@ const Process = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
-                    className={`ml-20 md:ml-0 md:w-[45%] bg-card border border-border p-8 rounded-3xl relative
+                    className={`ml-20 md:ml-0 md:w-[45%] bg-card border border-primary p-8 rounded-3xl relative transition-colors duration-300
                       ${!isEven ? 'md:ml-auto' : ''}
                     `}
                   >

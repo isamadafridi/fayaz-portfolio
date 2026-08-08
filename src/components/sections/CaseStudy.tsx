@@ -17,7 +17,7 @@ const CaseStudy = () => {
           <div className="w-24 h-1 bg-primary mx-auto mb-6" />
         </div>
 
-        <div className="bg-card border border-border rounded-[2rem] overflow-hidden p-6 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 items-center">
+        <div className="bg-card border border-primary rounded-[2rem] overflow-hidden p-6 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 items-center transition-colors duration-300">
           
           {/* Left: Text Content */}
           <div className="lg:w-1/2">
@@ -72,7 +72,7 @@ const CaseStudy = () => {
             </div>
 
             <div className="mt-10">
-              <a href="#" className="inline-flex items-center gap-2 bg-white text-background px-8 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-colors group">
+              <a href="https://www.linkedin.com/in/kirshan-khiloie-b8682b30b/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-background px-8 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-colors group">
                 View Client Profile
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>

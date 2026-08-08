@@ -78,7 +78,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [-10, 10, -10] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute top-20 right-10 md:right-20 bg-card border border-border p-4 rounded-2xl shadow-xl backdrop-blur-md"
+              className="absolute top-20 right-10 md:right-20 bg-card border border-primary p-4 rounded-2xl shadow-xl backdrop-blur-md"
             >
               <FaLinkedin className="text-primary w-8 h-8" />
             </motion.div>
@@ -86,7 +86,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [10, -10, 10] }}
               transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-20 left-10 md:left-20 bg-card border border-border p-4 rounded-2xl shadow-xl backdrop-blur-md"
+              className="absolute bottom-20 left-10 md:left-20 bg-card border border-primary p-4 rounded-2xl shadow-xl backdrop-blur-md"
             >
               <FaBehance className="text-white w-8 h-8" />
             </motion.div>
@@ -126,7 +126,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.8 + (i * 0.1) }}
-              className="w-10 h-10 bg-card/80 border border-border rounded-full flex items-center justify-center hover:bg-primary hover:-translate-x-1 transition-all duration-300 text-gray-400 hover:text-white backdrop-blur-sm shadow-lg"
+              className="w-10 h-10 bg-card/80 border border-border rounded-full flex items-center justify-center hover:bg-primary hover:-translate-x-1 transition-all duration-300 text-primary hover:text-white backdrop-blur-sm shadow-lg"
             >
               <Icon className="w-4 h-4" />
             </motion.a>

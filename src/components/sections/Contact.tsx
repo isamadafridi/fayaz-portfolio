@@ -119,7 +119,7 @@ const Contact = () => {
                       rel="noreferrer"
                       className="w-12 h-12 bg-card border border-border rounded-full flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all duration-300 group"
                     >
-                      <Icon className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+                      <Icon className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
                     </a>
                   )
                 })}
@@ -128,7 +128,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form (Right) */}
-          <div className="lg:col-span-3 bg-card border border-border rounded-3xl p-6 md:p-10">
+          <div className="lg:col-span-3 bg-card border border-primary rounded-3xl p-6 md:p-10 transition-colors duration-300">
             <h3 className="text-2xl font-bold font-heading mb-8 tracking-wide">Send a Message</h3>
 
             <form ref={form} onSubmit={sendEmail} className="space-y-6">

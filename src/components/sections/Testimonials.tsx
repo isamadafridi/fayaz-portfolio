@@ -66,7 +66,7 @@ const Testimonials = () => {
             className="w-full max-w-lg md:max-w-2xl py-10"
           >
             {testimonials.map((testimonial, index) => (
-              <SwiperSlide key={index} className="bg-card/80 backdrop-blur-xl border border-border rounded-3xl p-8 md:p-12 shadow-2xl">
+              <SwiperSlide key={index} className="bg-card/80 backdrop-blur-xl border border-primary rounded-3xl p-8 md:p-12 shadow-2xl transition-colors duration-300">
                 <Quote className="text-primary/20 w-20 h-20 absolute top-6 right-6" />
                 
                 <div className="flex gap-1 mb-6">
