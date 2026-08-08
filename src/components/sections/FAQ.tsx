@@ -5,11 +5,11 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: 'What are your pricing packages?',
-    answer: 'My pricing depends on the scope of the project. I offer custom quotes based on your specific needs, whether it\'s a one-off logo design, a complete personal branding overhaul, or ongoing LinkedIn management. Let\'s schedule a call to discuss your requirements.',
+    answer: 'Profile Optimization ($300): Headshot, banner, 2 featured section images, ready-made carousel templates, and SEO-based rewrite of the about section & headline. Monthly Management ($400/mo): Complete profile optimization with monthly engagement, content scheduling, and posting. Logo & Social Media Design: Starting at $50.',
   },
   {
     question: 'How long does a branding project take?',
-    answer: 'A standard personal branding project, including LinkedIn optimization, banner design, and content strategy, typically takes 2-4 weeks. Larger scale corporate projects may take 4-8 weeks. I always provide a clear timeline during our discovery phase.',
+    answer: 'Normally profile optimization design takes 2 to 3 business days and for complex projects it takes up to 1 week.',
   },
   {
     question: 'Do you offer revisions?',

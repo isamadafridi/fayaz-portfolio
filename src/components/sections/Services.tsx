@@ -8,16 +8,19 @@ const services = [
     title: 'LinkedIn Profile Optimization',
     description: 'Transform your LinkedIn profile into a powerful landing page that attracts high-value connections and clients.',
     icon: FaLinkedin,
+    price: '$300',
   },
   {
     title: 'LinkedIn Personal Branding',
     description: 'Comprehensive strategy and content design to establish your authority and thought leadership on LinkedIn.',
     icon: Briefcase,
+    price: '$400/mo',
   },
   {
     title: 'Social Media Design',
     description: 'Eye-catching and engaging graphics tailored for various social media platforms to boost audience engagement.',
     icon: Layout,
+    price: 'From $50',
   },
   {
     title: 'LinkedIn Banner Design',
@@ -28,6 +31,7 @@ const services = [
     title: 'Logo Design',
     description: 'Memorable and timeless logo designs that capture the essence of your personal or business brand.',
     icon: PenTool,
+    price: 'From $50',
   },
   {
     title: 'Brand Identity',
@@ -38,6 +42,7 @@ const services = [
     title: 'Profile Management',
     description: 'End-to-end management of your visual presence, ensuring consistency across all touchpoints.',
     icon: Sparkles,
+    price: '$400/mo',
   },
   {
     title: 'UI/UX Design',
@@ -114,9 +119,14 @@ const Services = () => {
                     <Icon className="text-primary group-hover:text-white w-6 h-6 transition-colors duration-300" />
                   </div>
                   <h3 className="text-xl font-bold font-heading tracking-wide mb-3">{service.title}</h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">
+                  <p className="text-sm text-gray-400 leading-relaxed mb-4">
                     {service.description}
                   </p>
+                  {service.price && (
+                    <div className="inline-block mt-2 px-4 py-1.5 bg-primary/10 border border-primary/30 text-primary text-xs font-bold rounded-full">
+                      {service.price}
+                    </div>
+                  )}
                 </div>
               </motion.div>
             );
