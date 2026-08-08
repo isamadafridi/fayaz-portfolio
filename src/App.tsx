@@ -6,6 +6,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import CustomCursor from './components/layout/CustomCursor';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import CreativeBackground from './components/layout/CreativeBackground';
 
 // Sections
 import Hero from './components/sections/Hero';
@@ -69,6 +70,7 @@ function App() {
           <meta name="twitter:card" content="summary_large_image" />
         </Helmet>
 
+        <CreativeBackground />
         <CustomCursor />
         <Navbar />
         
