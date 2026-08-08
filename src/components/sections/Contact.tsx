@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react';
-import { FaLinkedinIn, FaBehance, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedinIn, FaBehance, FaWhatsapp, FaInstagram, FaFacebookF } from 'react-icons/fa';
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -107,6 +107,8 @@ const Contact = () => {
                   { icon: FaLinkedinIn, link: 'https://www.linkedin.com/in/fayaz-afridi-80ba02224' },
                   { icon: FaBehance, link: 'https://www.behance.net/fayazafridi' },
                   { icon: FaWhatsapp, link: 'https://wa.me/923129979558' },
+                  { icon: FaInstagram, link: 'https://www.instagram.com/fayaz_afridii' },
+                  { icon: FaFacebookF, link: 'https://www.facebook.com/fayaz_afridii' },
                 ].map((social, i) => {
                   const Icon = social.icon;
                   return (

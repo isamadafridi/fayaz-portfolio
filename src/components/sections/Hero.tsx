@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Mail, ArrowRight, Mouse } from 'lucide-react';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaBehance } from 'react-icons/fa';
+import { FaLinkedin, FaBehance, FaWhatsapp, FaInstagram, FaFacebookF } from 'react-icons/fa';
 import heroImage from '../../assets/hero.jpeg';
 
 const Hero = () => {
@@ -21,15 +20,15 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left Column - Text */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col items-start"
           >
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -38,7 +37,7 @@ const Hero = () => {
               Hi, I'm
             </motion.p>
             <h1 className="text-6xl md:text-8xl font-heading font-bold leading-[0.9] mb-4">
-              Fayaz <br />
+              Fayaz
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">Afridi</span>
             </h1>
             <h2 className="text-xl md:text-3xl text-gray-300 font-medium mb-6">
@@ -48,7 +47,7 @@ const Hero = () => {
             <p className="text-gray-400 max-w-lg text-sm md:text-base mb-10 leading-relaxed">
               Helping founders, entrepreneurs, CEOs and professionals build powerful personal brands through strategic graphic design and LinkedIn optimization.
             </p>
-            
+
             <div className="flex flex-wrap gap-4">
               <a href="#contact" className="group flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-orange-600 transition-all duration-300 transform hover:scale-105">
                 Hire Me
@@ -62,7 +61,7 @@ const Hero = () => {
 
           {/* Right Column - Image & Floating Elements */}
           <div className="relative h-[500px] lg:h-[600px] w-full flex items-center justify-center">
-            <motion.div 
+            <motion.div
               style={{ y: y1 }}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -71,12 +70,12 @@ const Hero = () => {
             >
               {/* Profile Image */}
               <div className="w-full h-full flex items-center justify-center overflow-hidden bg-card">
-                 <img src={heroImage} alt="Fayaz Afridi" className="w-full h-full object-cover object-center" />
+                <img src={heroImage} alt="Fayaz Afridi" className="w-full h-full object-cover object-center" />
               </div>
             </motion.div>
 
             {/* Floating Icons */}
-            <motion.div 
+            <motion.div
               animate={{ y: [-10, 10, -10] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               className="absolute top-20 right-10 md:right-20 bg-card border border-border p-4 rounded-2xl shadow-xl backdrop-blur-md"
@@ -84,7 +83,7 @@ const Hero = () => {
               <FaLinkedin className="text-primary w-8 h-8" />
             </motion.div>
 
-            <motion.div 
+            <motion.div
               animate={{ y: [10, -10, 10] }}
               transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
               className="absolute bottom-20 left-10 md:left-20 bg-card border border-border p-4 rounded-2xl shadow-xl backdrop-blur-md"
@@ -96,18 +95,44 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div 
+      <motion.div
         style={{ opacity }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
         <span className="text-xs text-gray-500 uppercase tracking-widest">Scroll</span>
-        <motion.div 
+        <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
         >
           <Mouse size={24} className="text-gray-400" />
         </motion.div>
       </motion.div>
+      {/* Vertical Social Links */}
+      <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4 z-50">
+        {[
+          { icon: FaLinkedin, link: 'https://www.linkedin.com/in/fayaz-afridi-80ba02224' },
+          { icon: FaBehance, link: 'https://www.behance.net/fayazafridi' },
+          { icon: FaWhatsapp, link: 'https://wa.me/923129979558' },
+          { icon: FaInstagram, link: 'https://www.instagram.com/fayaz_afridii' },
+          { icon: FaFacebookF, link: 'https://www.facebook.com/fayaz_afridii' },
+        ].map((social, i) => {
+          const Icon = social.icon;
+          return (
+            <motion.a
+              key={i}
+              href={social.link}
+              target="_blank"
+              rel="noreferrer"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8 + (i * 0.1) }}
+              className="w-10 h-10 bg-card/80 border border-border rounded-full flex items-center justify-center hover:bg-primary hover:-translate-x-1 transition-all duration-300 text-gray-400 hover:text-white backdrop-blur-sm shadow-lg"
+            >
+              <Icon className="w-4 h-4" />
+            </motion.a>
+          );
+        })}
+      </div>
     </section>
   );
 };
