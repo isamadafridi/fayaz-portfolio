@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 const CreativeBackground = () => {
   return (
     <div className="fixed inset-0 pointer-events-none z-[0] overflow-hidden flex items-center justify-center">
-      
+
       {/* Designer Studio Large Watermark Text */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.03 }}
+        animate={{ opacity: 0.02 }}
         transition={{ duration: 2 }}
         className="absolute w-full flex items-center justify-center whitespace-nowrap select-none"
       >
@@ -16,12 +16,12 @@ const CreativeBackground = () => {
           DESIGN STUDIO
         </h1>
       </motion.div>
+
+      {/* Abstract Design Elements */}
+
+      {/* Triangle */}
       <motion.div
-        animate={{ 
-          rotate: 360,
-          y: [0, -40, 0],
-          x: [0, 30, 0]
-        }}
+        animate={{ rotate: 360, y: [0, -40, 0], x: [0, 30, 0] }}
         transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
         className="absolute top-[15%] left-[8%] opacity-20"
       >
@@ -30,15 +30,11 @@ const CreativeBackground = () => {
         </svg>
       </motion.div>
 
-      {/* Circle */}
+      {/* Circle (Moved to center-left) */}
       <motion.div
-        animate={{ 
-          y: [0, 60, 0],
-          x: [0, -30, 0],
-          scale: [1, 1.1, 1]
-        }}
+        animate={{ y: [0, 60, 0], x: [0, -30, 0], scale: [1, 1.1, 1] }}
         transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-[60%] right-[10%] opacity-20"
+        className="absolute top-[70%] left-[45%] opacity-20"
       >
         <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="#FF6B00" strokeWidth="2" strokeDasharray="5,5">
           <circle cx="50" cy="50" r="45" />
@@ -47,10 +43,7 @@ const CreativeBackground = () => {
 
       {/* Cross / Plus */}
       <motion.div
-        animate={{ 
-          rotate: -360,
-          y: [0, 50, 0]
-        }}
+        animate={{ rotate: -360, y: [0, 50, 0] }}
         transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
         className="absolute bottom-[15%] left-[20%] opacity-15"
       >
@@ -59,23 +52,18 @@ const CreativeBackground = () => {
           <line x1="10" y1="50" x2="90" y2="50" />
         </svg>
       </motion.div>
-      
-      {/* Bezier / Pen Tool path */}
+
+      {/* Bezier / Pen Tool path (Moved to top-center) */}
       <motion.div
-        animate={{ 
-          rotate: [0, 15, -15, 0],
-          y: [0, -30, 0]
-        }}
+        animate={{ rotate: [0, 15, -15, 0], y: [0, -30, 0] }}
         transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-[30%] right-[25%] opacity-20"
+        className="absolute top-[10%] left-[45%] opacity-20"
       >
-        <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="#ffffff" strokeWidth="2">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="#ffffff" strokeWidth="2">
           <path d="M10,50 Q30,10 50,50 T90,50" />
-          {/* Anchor points */}
           <rect x="7" y="47" width="6" height="6" fill="#FF6B00" />
           <rect x="47" y="47" width="6" height="6" fill="#FF6B00" />
           <rect x="87" y="47" width="6" height="6" fill="#FF6B00" />
-          {/* Handles */}
           <line x1="10" y1="50" x2="30" y2="10" stroke="#FF6B00" strokeWidth="1" strokeDasharray="2,2" />
           <circle cx="30" cy="10" r="3" fill="#ffffff" />
         </svg>
@@ -83,11 +71,7 @@ const CreativeBackground = () => {
 
       {/* Typography T */}
       <motion.div
-        animate={{ 
-          rotate: [-10, 10, -10],
-          y: [0, 40, 0],
-          x: [0, 20, 0]
-        }}
+        animate={{ rotate: [-10, 10, -10], y: [0, 40, 0], x: [0, 20, 0] }}
         transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-[40%] left-[30%] opacity-15"
       >
@@ -99,15 +83,12 @@ const CreativeBackground = () => {
           <line x1="40" y1="80" x2="60" y2="80" />
         </svg>
       </motion.div>
-      
-      {/* Crop Tool */}
+
+      {/* Crop Tool (Moved to center-bottom) */}
       <motion.div
-        animate={{ 
-          rotate: 360,
-          scale: [1, 1.2, 1]
-        }}
+        animate={{ rotate: 360, scale: [1, 1.2, 1] }}
         transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
-        className="absolute bottom-[40%] right-[15%] opacity-20"
+        className="absolute bottom-[35%] left-[50%] opacity-20"
       >
         <svg width="70" height="70" viewBox="0 0 100 100" fill="none" stroke="#ffffff" strokeWidth="3">
           <path d="M30,10 L30,70 L90,70" />
@@ -115,17 +96,48 @@ const CreativeBackground = () => {
         </svg>
       </motion.div>
 
-      {/* Design Cursor / Arrow */}
+      {/* Design Cursor / Arrow (Left center) */}
       <motion.div
-        animate={{ 
-          y: [0, -50, 0],
-          x: [0, -50, 0]
-        }}
+        animate={{ y: [0, -50, 0], x: [0, -50, 0] }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-[10%] right-[40%] opacity-15"
+        className="absolute top-[50%] left-[15%] opacity-15"
       >
         <svg width="60" height="60" viewBox="0 0 100 100" fill="none" stroke="#FF6B00" strokeWidth="3" strokeLinejoin="round">
           <path d="M20,20 L80,50 L55,60 L75,90 L60,100 L40,65 L20,80 Z" />
+        </svg>
+      </motion.div>
+
+      {/* NEW: Marquee Square */}
+      <motion.div
+        animate={{ rotate: -180, scale: [1, 0.9, 1] }}
+        transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+        className="absolute top-[80%] left-[25%] opacity-15"
+      >
+        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" stroke="#FF6B00" strokeWidth="3" strokeDasharray="8,8">
+          <rect x="10" y="10" width="80" height="80" rx="5" />
+        </svg>
+      </motion.div>
+
+      {/* NEW: Squiggle / ZigZag */}
+      <motion.div
+        animate={{ x: [0, 40, 0], y: [0, 20, 0] }}
+        transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-[25%] left-[20%] opacity-20"
+      >
+        <svg width="100" height="40" viewBox="0 0 100 40" fill="none" stroke="#ffffff" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round">
+          <path d="M10,20 L25,5 L40,35 L55,5 L70,35 L85,20" />
+        </svg>
+      </motion.div>
+
+      {/* NEW: Abstract Ellipses (Color Palette) */}
+      <motion.div
+        animate={{ rotate: 360 }}
+        transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+        className="absolute top-[5%] left-[30%] opacity-15"
+      >
+        <svg width="90" height="90" viewBox="0 0 100 100" fill="none" stroke="#FF6B00" strokeWidth="2">
+          <ellipse cx="40" cy="50" rx="30" ry="20" transform="rotate(-45 40 50)" />
+          <ellipse cx="60" cy="50" rx="30" ry="20" transform="rotate(45 60 50)" />
         </svg>
       </motion.div>
 
