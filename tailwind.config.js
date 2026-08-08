@@ -14,8 +14,8 @@ export default {
         border: 'rgba(255,255,255,0.08)',
       },
       fontFamily: {
-        heading: ['Georgia', 'Lora', 'serif'],
-        body: ['Poppins', 'sans-serif'],
+        heading: ['"Lora"', '"Georgia"', 'serif'],
+        body: ['"Poppins"', 'sans-serif'],
       },
     },
   },
