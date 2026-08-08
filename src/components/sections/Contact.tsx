@@ -108,7 +108,7 @@ const Contact = () => {
                   { icon: FaBehance, link: 'https://www.behance.net/fayazafridi' },
                   { icon: FaWhatsapp, link: 'https://wa.me/923129979558' },
                   { icon: FaInstagram, link: 'https://www.instagram.com/fayaz_afridii' },
-                  { icon: FaFacebookF, link: 'https://www.facebook.com/fayaz_afridii' },
+                  { icon: FaFacebookF, link: 'https://www.facebook.com/fayaz.afridi.998311' },
                 ].map((social, i) => {
                   const Icon = social.icon;
                   return (

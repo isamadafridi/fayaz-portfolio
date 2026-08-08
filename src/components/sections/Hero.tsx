@@ -79,7 +79,7 @@ const Hero = () => {
               { icon: FaBehance, link: 'https://www.behance.net/fayazafridi', position: 'bottom-10 md:bottom-20 left-4 md:left-10', animation: { y: [15, -15, 15], x: [0, -5, 0] }, duration: 5, delay: 1 },
               { icon: FaWhatsapp, link: 'https://wa.me/923129979558', position: 'top-24 md:top-36 left-2 md:left-8', animation: { y: [-10, 10, -10], x: [0, -10, 0] }, duration: 4.5, delay: 0.5 },
               { icon: FaInstagram, link: 'https://www.instagram.com/fayaz_afridii', position: 'bottom-24 md:bottom-36 right-2 md:right-8', animation: { y: [10, -10, 10], x: [0, 10, 0] }, duration: 5.5, delay: 1.5 },
-              { icon: FaFacebookF, link: 'https://www.facebook.com/fayaz_afridii', position: 'top-1/2 -mt-6 right-0 md:-right-4', animation: { y: [-12, 12, -12], x: [5, -5, 5] }, duration: 6, delay: 2 },
+              { icon: FaFacebookF, link: 'https://www.facebook.com/fayaz.afridi.998311', position: 'top-1/2 -mt-6 right-0 md:-right-4', animation: { y: [-12, 12, -12], x: [5, -5, 5] }, duration: 6, delay: 2 },
             ].map((social, idx) => {
               const Icon = social.icon;
               return (
