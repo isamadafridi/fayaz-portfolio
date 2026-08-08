@@ -26,6 +26,7 @@ const services = [
     title: 'LinkedIn Banner Design',
     description: 'Custom, high-converting banner designs that communicate your unique value proposition instantly.',
     icon: ImageIcon,
+    price: 'From $50',
   },
   {
     title: 'Logo Design',
@@ -37,6 +38,7 @@ const services = [
     title: 'Brand Identity',
     description: 'Complete visual identity systems including color palettes, typography, and brand guidelines.',
     icon: Palette,
+    price: 'From $60',
   },
   {
     title: 'Profile Management',
@@ -48,6 +50,7 @@ const services = [
     title: 'UI/UX Design',
     description: 'User-centric interface designs for web and mobile applications focused on seamless experiences.',
     icon: MonitorSmartphone,
+    price: 'From $60',
   },
 ];
 
