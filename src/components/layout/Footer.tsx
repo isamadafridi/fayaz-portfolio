@@ -18,8 +18,8 @@ const Footer = () => {
 
           {/* Brand Info */}
           <div className="lg:col-span-2">
-            <a href="#" className="text-3xl font-heading tracking-wider font-bold text-white mb-6 inline-block">
-              FAYAZ<span className="text-primary">AFRIDI</span>
+            <a href="/" className="text-3xl font-heading tracking-wider font-bold text-white mb-6 inline-block">
+              FAYAZ <span className="text-primary">AFRIDI</span>
             </a>
             <p className="text-gray-400 max-w-sm mb-8 leading-relaxed">
               Elevating personal brands for founders, CEOs, and industry leaders through strategic design and LinkedIn optimization.

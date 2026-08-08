@@ -36,9 +36,8 @@ const Hero = () => {
             >
               Hi, I'm
             </motion.p>
-            <h1 className="text-6xl md:text-8xl font-heading font-bold leading-[0.9] mb-4">
-              FAYAZ
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">AFRIDI</span>
+            <h1 className="text-4xl md:text-7xl font-heading font-bold leading-[0.9] mb-4">
+              FAYAZ <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">AFRIDI</span>
             </h1>
             <h2 className="text-xl md:text-3xl text-gray-300 font-medium mb-6">
               Graphic Designer, Content Creator & <br className="hidden md:block" />

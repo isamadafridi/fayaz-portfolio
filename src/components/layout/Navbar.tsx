@@ -32,8 +32,8 @@ const Navbar = () => {
           }`}
       >
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-          <a href="#" className="text-2xl font-heading tracking-wider font-bold text-white z-50">
-            FAYAZ<span className="text-primary">AFRIDI</span>
+          <a href="/" className="text-2xl font-heading tracking-wider font-bold text-white z-50">
+            FAYAZ <span className="text-primary">AFRIDI</span>
           </a>
 
           {/* Desktop Nav */}
