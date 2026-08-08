@@ -14,7 +14,7 @@ export default {
         border: 'rgba(255,255,255,0.08)',
       },
       fontFamily: {
-        heading: ['"Bebas Neue"', 'sans-serif'],
+        heading: ['Georgia', 'serif'],
         body: ['Poppins', 'sans-serif'],
       },
     },

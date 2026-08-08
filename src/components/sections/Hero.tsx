@@ -37,11 +37,11 @@ const Hero = () => {
               Hi, I'm
             </motion.p>
             <h1 className="text-6xl md:text-8xl font-heading font-bold leading-[0.9] mb-4">
-              Fayaz
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">Afridi</span>
+              FAYAZ
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">AFRIDI</span>
             </h1>
             <h2 className="text-xl md:text-3xl text-gray-300 font-medium mb-6">
-              Graphic Designer & <br className="hidden md:block" />
+              Graphic Designer, Content Creator & <br className="hidden md:block" />
               LinkedIn Personal Branding Expert
             </h2>
             <p className="text-gray-400 max-w-lg text-sm md:text-base mb-10 leading-relaxed">
