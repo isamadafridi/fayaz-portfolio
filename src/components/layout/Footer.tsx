@@ -80,9 +80,9 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500 text-center md:text-left">
-            &copy; {new Date().getFullYear()} Fayaz Afridi. All rights reserved. <br className="md:hidden" />
-            Developed by Abdul Samad Afridi, Email: isamadafridi@gmail.com
+          <p className="text-sm text-gray-500 text-center md:text-left leading-relaxed">
+            &copy; {new Date().getFullYear()} Fayaz Afridi. All rights reserved.<br />
+            Developed by Abdul Samad Afridi, Email: <a href="mailto:isamadafridi@gmail.com" className="text-primary hover:underline">isamadafridi@gmail.com</a>
           </p>
 
           <button
