@@ -21,7 +21,7 @@ const Contact = () => {
     const message = formData.get('message');
 
     // Create a mailto link
-    const mailtoLink = `mailto:isamadafridi@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:fayazafridi312@gmail.com?subject=${encodeURIComponent(
       subject as string
     )}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
